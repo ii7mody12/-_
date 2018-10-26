@@ -48,4 +48,4 @@ async def resume(ctx):
 
 
 
-client.run("NDk0ODYwNTgxNDM0Njg3NDg4.DrNffg.-nvMjDXhhSYwWixhV-PukS-Ng9w")
+client.run(str(os.environ.get('BOT_TOKEN')))
