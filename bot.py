@@ -13,6 +13,7 @@ player_dict = dict()
 @client.event
 async def on_ready():
     print("Bot ist bereit")
+    yield from client.change_presence(game=Game(name="#Ghost4Ever"))
 
 
 @client.command(pass_context=True)
