@@ -41,4 +41,4 @@ async def off(ctx):
     await bot.say("AntiBot Is Off !")
 
 
-bot.run(str(os.environ.get('BOT_TOKEN')))
+client.run(str(os.environ.get('BOT_TOKEN')))
