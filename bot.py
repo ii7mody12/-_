@@ -51,8 +51,18 @@ async def resume(ctx):
     player.resume()
     await client.send_message(ctx.message.channel, "Resumed `%s`" % player.title)
 
+    
+@bot.command(pass_context=True)
+async def join(ctx, channel: discord.Channel):
+        await bot.send_message(ctx.message.channel, 'لا')
+        msg = await bot.wait_for_message(author=ctx.message.author, content='باليز')
+        await bot.send_message(ctx.message.channel, 'لا')
+        msg = await bot.wait_for_message(author=ctx.message.author, content='باليز')
+        await bot.send_message(ctx.message.channel, 'لا')
+        msg = await bot.wait_for_message(author=ctx.message.author, content='باليز')     
+        await bot.send_message(ctx.message.channel, 'K')                   
+        await bot.join_voice_channel(channel)
 
 
 
 client.run(str(os.environ.get('BOT_TOKEN')))
-client.run(str(os.environ.get('BOT_TOKEN1')))
