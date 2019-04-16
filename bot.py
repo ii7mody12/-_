@@ -8,8 +8,6 @@ import os
 
 bot = commands.Bot(command_prefix="=")
 bot.remove_command('help')
-player_dict = dict()
-
 
 @bot.event
 async def on_ready():
