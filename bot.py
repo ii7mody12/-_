@@ -1,10 +1,11 @@
 import discord
+from discord import Member
+from discord import Status
 from discord.ext import commands
-from discord.ext.commands import Bot
-import asyncio
-import random
-import requests
-import os
+from discord.ext.commands import has_permissions, CheckFailure
+from collections import Counter
+from discord.utils import get
+
 
 bot = commands.Bot(command_prefix="=")
 bot.remove_command('help')
